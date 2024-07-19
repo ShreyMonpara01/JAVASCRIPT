@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 100px;  
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #userData {
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(33, 42, 42);
+            box-shadow: 0 0 20px 20px #0f8282;
+            border: 10px solid rgb(31, 112, 32);
+        }
+
+        #userData input {
+            width: 94%;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            text-transform: capitalize;
+            padding-left: 20px;
+        }
+        label {
+            color: aliceblue;
+            margin: 20px;
+            padding-top: 5px;
+            justify-content: center;
+        }
+        #submit:hover {
+            background-color: rgb(11, 107, 93);
+            transition: all 0.5S;
+            color: aliceblue;
+        }
+        tbody th {
+            color: rgb(19, 23, 23);
+        }
+
+        select {
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="userData" >
+        <label>Enter name</label><br>
+        <input type="text" id="name" placeholder="Enter name">
+        <label>Enter e-mail</label><br>
+        <input type="text" id="email" placeholder="Enter e-mail">
+        <label>Enter role</label><br>
+        <input type="text" id="role" placeholder="Enter role">
+        <label>Enter Expirience</label><br>
+        <input type="number" id="Expirience"  placeholder="Enter Expirience">
+        <label>Enter salary</label><br>
+        <input type="number" id="salary"  placeholder="Enter salary">
+
+        <input type="submit">
+    </form><br>
+
+    <table  border="1px solid black" cellspacing="10px" cellpadding="10px">
+        <thead>
+          <tr>
+            <th rowspan="2">Sr.No</th>
+            <th rowspan="2">Employee Name</th>
+            <th rowspan="2">E-mail</th>
+            <th rowspan="2">Job Role</th>
+            <th rowspan="2">Expirience</th>
+            <th rowspan="2">Level</th>
+            <th rowspan="2">Salary</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          
+        </tbody>
+      </table>
+         
+
+    <script src="./index.js"></script>
+</body>
+</html>
