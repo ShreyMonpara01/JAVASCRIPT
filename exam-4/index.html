@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form id="userData">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">student Details</span>
+
+                    <div class="fields">
+
+                        
+
+                        <div class="input-field">
+                            <label>name</label>
+                            <input type="text" placeholder="enter you name" id="name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>grid</label>
+                            <input type="number" placeholder="grid" id="grid" required>
+                        </div>
+                        <div class="input-field">
+                            <label>coures</label>
+                            <!-- <input type="text" placeholder="coures" id="coures" required> -->
+                            <select name="coures" id="coures">
+                                <option value="backend-dev">backend dev</option>
+                                <option value="frontend-dev">frontend-dev</option>
+                                <option value="UI/UX">UI/UX
+                                <option>
+                                <option value="Graphics-designer">Graphics designer
+                                <option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>number</label>
+                            <input type="number" placeholder="number" id="number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>fee</label>
+                            <!-- <input type="number" placeholder="fee" id="fee" required> -->
+                            <select name="coures" id="fee">
+                                <option value="50000">backend-dev/50000</option>
+                                <option value="60000">frontend-dev/60000</option>
+                                <option value="70000">UI/UX/70000<option>
+                                <option value="90000">Graphics-designer/90000<option>
+                            </select>
+                        </div><br><br>
+
+                        <button class="nextBtn">
+                            <span class="submit">submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+                </form>
+                <table id="table" cellspacing="30px" cellpadding="20px" border="5">
+                    <thead id="head">
+                        <th>fee</th>
+                        <th>name</th>
+                        <th>grid</th>
+                        <th>coures</th>
+                        <th>number</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="tbody">
+            
+                    </tbody>
+                </table>
+                <script src="./index.js"></script>
+            </body>
+</html>
