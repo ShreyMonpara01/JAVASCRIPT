@@ -1,6 +1,6 @@
 const Occurrencesarray = () => {
   // array
-  let array = [1, 2, 2, 3, 2, 4, 5];
+  let array = [1,3,3,4,3,5,6,7];
   // get
   let get = 2;
   // count
