@@ -1,9 +1,10 @@
-let arr =[1,2,3,4,5]
-const lelement =() =>{
-    let lelement =arr[i]
 
-    for(let i =0 ; i <arr .length; i++){
-        if(lelement  > arr[i])
-            lelement
-    }
-}
+const LargestElement = () => {
+    // array
+  let array = [1,2,3,4,5];
+  arr.sort();
+    // Largest Element
+  let LargestElement = array.pop();
+  console.log(LargestElement);
+};
+LargestElement()
